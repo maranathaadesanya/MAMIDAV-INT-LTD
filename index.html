@@ -4,31 +4,114 @@
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="style.css">
 		<script src="script.js"></script>
-        <title>MAMIDAV INT LTD: home</title>
+        <title img src="mamidav.png">MAMIDAV INT LTD: home</title>
     </head>
     
     <body>
-        <div class="grid container">
-            <a href="index.html"><img src="MAMIDAV INT LTD.jpeg" alt="Home"></a>
-            <div class="clickable" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-                <div class="dropdown">
-                    <div class="dropdown-content">
-                        <a href="#">MAMIDAV FARMS</a>
-                        <a href="#">MAMIDAV FOODS</a>
-                        <a href="#">MAMIDAV STORE</a>
-                        <a href="#">INVEST IN US!</a>
-                        <a href="#">MORE</a>
-                        <p img src="globe.jpeg">
-                        NIGERIA<br>
-                        ENGLISH
-                        </p>
+        <div class="grid-container" class= "dropdown">
+                <a href="index.html"><img src="mamidav.png" alt="HOME" class="logo"></a>
+                <div class="header">
+                    <h1>
+                        MAMIDAV INTERNATIONAL LIMITED
+                    </h1>
+                </div> 
+                <div onclick="myFunction()" class="dropbtn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="farms.html">FARMS</a>
+                        <a href="foods.html">FOODS</a>
+                        <a href="store.html">STORE</a>
+                        <a href="invest.html">INVEST!</a>
+                        <a href="more.html">MORE</a>
                     </div>
-                </div>
+                </div> 
+        </div>
+        <div class="search">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="box">
+        </div>
+        <div class="banner">
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="supermarket.png" alt="Farm" style="width:100%">
+            </div>
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="small chops.png" alt="Food" style="width:100%">
+            </div>
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="fish.png" alt="Store" style="width:100%">
+            </div>
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="fruits.png" alt="Store" style="width:100%">
+            </div>
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="pigs.png" alt="Store" style="width:100%">
+            </div>
+            <div class="slideshow fade">
+                <button type="button">Buy now<img src="arrow.png" class="arrow" alt="buy now">
+                </button>
+                <img src="cassava.png" alt="Store" style="width:100%">
             </div>
         </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="farms.html">MAMIDAV FARMS</a></li></br>
+                    <li><a href="foods.html">MAMIDAV FOODS</a></li></br>
+                    <li><a href="store.html">MAMIDAV STORE</a></li></br>
+                    <li><a href="invest.html">INVEST IN US!</a> </li></br>
+                    <li><a href="more.html">MORE</a></li></br>
+                </ul>
+            </nav>
+            <div class="footer">
+                <a href="https://web.facebook.com/profile.php?id=100072033227708&is_tour_dismissed=true"><img src="fb.png"></a>
+                <a href="https://www.twitter.com/"><img src="tw.png"></a>
+                <a href="https://www.instagram.com/"><img src="ig.png"></a>
+            </div>
     </body>
+    
+<script>
+slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slideshow");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2.5 seconds
+}
+</script> 
 </html>
