@@ -1,8 +1,7 @@
 body{
-  background-color: #00000085;
+  background-color: #dadada;
   background-size: auto;
   box-sizing: border-box;
-  background-image:url(mamidavb.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -11,6 +10,19 @@ body{
   border-color: black;;
   /*margin: 0px;
   padding: 0px;*/
+  }
+
+  .bgimg{
+    opacity: 3%;
+    position: absolute;
+    /*top: 10%;
+    left: 3%;*/ 
+    margin-left: 10px;
+  }
+
+  .bgimg img {
+    width: 1300px;
+    height: 1300px;
   }
 
  .dropbtn {
@@ -78,9 +90,9 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
     min-width: 100px;
-    /*overflow: auto;*/
+    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /*z-index: 1;*/
+    z-index: 1;
     transition: 5s;
   }
   
@@ -90,6 +102,7 @@ body{
     text-decoration: none;
     display: block;
     transition: 5s;
+    text-align: center;
   }
 
   .dropdown a:hover {background-color: #ddd;}
@@ -113,46 +126,47 @@ body{
     border-style: dashed;*/
   }
 
-  .search{
-    justify-content: center;
+  .Search{
+    position: absolute;
+    /*justify-content: center;
     padding: 20px;
-    border: none;
     margin-top: 8px;
-    margin-right: 16px;
-    font-size: 40px;
-    margin-left: 300px;
+    margin-right: 16px;*/
+    margin-left: 375px;
+    border-style: dashed;
   }
-  .search input[type=text] {
+
+  input[type=text] {
     padding: 6px;
     margin-top: 8px;
     font-size: 40px;
     border: none;
   }
 
-  .search button{
-    float: right;
-    padding: 28px;
-    margin-top: 9px;
-    margin-right: 419px;
+  .Search button{
+    /*float: right;*/
+    position: absolute;
+    padding: 29px;
+    /*margin-top: 7px;
+    margin-left: 3px;*/
     background: #bbb;
-    font-size: 40px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
-    
   }
   
-  .search button:hover {
+  .Search button:hover {
       background: #717171;
   }
 
-  .box{
+  /*.box{
     width: 500px;
     height: 310px;
     position: absolute;
     top: 50%;
     left: 740px;
     background: linear-gradient(to right, rgb(245, 3, 172), rgb(219, 84, 158));
-  }
+  }*/
 
   .slideshow {display: block;}
   
@@ -179,7 +193,7 @@ body{
   }
 
   .banner :hover{
-    color: rgb(5, 231, 43);
+    color: rgb(255, 255, 255);
   }
   /*.info{
     border-style: ridge;
@@ -205,6 +219,7 @@ body{
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -234,24 +249,26 @@ body{
     display: none;
   }
 
-  .slideshow button:hover .arrow{
-    display: block;
-  }
-
   .slideshow button:hover{
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
+  .slideshow button:hover .arrow{
+    display: block;
+  }
+
  .notes h2{
   grid-template-columns: auto auto auto auto;
-
   }
+
   nav{
     flex: 1;
     text-align: center;
   }
+
   nav ul li{
     list-style: none;
     display: inline-block;
@@ -271,6 +288,7 @@ body{
     width: 15px;
     margin: 60px;
   }
+
   .footer{
     text-align: center;
   }
