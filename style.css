@@ -158,45 +158,6 @@ body{
     border-left: none; /* Prevent double borders */
     cursor: pointer;
   }
-
-  /*form.searchbox::after {
-  content: "";
-  clear: both;
-  display: table;
-}*/
-
-  /*  .Search{
-    /*margin-left: 400px;
-    border-style: dashed;
-	width: 400px;
-	height: 50px;
-	/*margin-right: 400px;
-	position: relative; 
-	margin: 0 auto; 
-  }
-
-  .input{
-    padding: 20px;
-    /*font-size: 30px;
-	width: 500px; 
-	margin-top: 5px;
-	height: 10px; 
-	border: 3px solid #f5f5f5; 
-	border-radius: 10px; 
-	float: left;
-	margin-left: 5px;
-  }
-
-  .button{
-    cursor: pointer;
-	padding: 20px;
-	margin-left: 5px;
-	float: right; 
-	/*border: 2px solid #fff;
-	color: #f6f6f6;  
-	position: absolute; 
-	top: 3px;  
-  }*/
   
   form.searchbox button:hover {
     background: linear-gradient(to right, rgb(245, 3, 172), rgb(109, 10, 48)); 
@@ -266,7 +227,7 @@ body{
     animation-name: fade;
     animation-duration: 1.5s;
   }
-
+  
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -306,6 +267,45 @@ body{
   .slideshow button:hover .arrow{
     display: block;
   }
+  
+  .about {
+	  display: block;
+	  width: 450px;
+	  height: 300px;
+	  margin-left: 20px;
+	  margin-bottom: 100px;
+   }
+  
+  /*.boo {
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    margin-top: 100px;
+    /*max-width: 600px;
+    height: 300px;
+    margin: 0 370px 0 370px;
+    position: relative;
+    /*background-color: #8c00ff54;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.2);*/
+  }*/
+  
+  .boo img {
+    vertical-align: middle;
+    height: 300px;
+    /*margin-left: 400px;*/
+  }
+  
+  .kin {
+    animation-name: kin;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes kin {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
   .boo{
     background: linear-gradient(to right, rgb(245, 3, 172), rgb(109, 10, 48));
@@ -316,12 +316,9 @@ body{
     margin-top: 100px;
   }
 
-  .about, .invest, .contact{
-    width: 450px;
-    height: 300px;
-    margin-left: 20px;
-    margin-bottom: 100px;
-  }
+  /*.about, .invest, .contact{
+    
+  }*/
 
   .hut{
     background-color: #00000069;
